@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav.top-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav.top-nav ul li {
+    padding: 10px;
+}
+
+nav.top-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav.top-nav ul li a:hover {
+    color: #00bfff;
+}
+
+aside.side-nav {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #003366;
+    color: #ffffff;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+aside.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside.side-nav ul li {
+    padding: 15px;
+}
+
+aside.side-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+aside.side-nav ul li a:hover {
+    background-color: #005f99;
+}
+
+#navToggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+main {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.animated-img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.animated-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    animation: zoomIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
